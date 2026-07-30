@@ -56,6 +56,22 @@ export const translations = {
         techDetails: "Python (Flask), PostgreSQL, Scikit-Learn (ML), HTML5/CSS3, JavaScript (ES6).",
         githubUrl: "https://github.com/AlesisxHz-afk/TesisDistribucionProductos",
         codeButton: "Código"
+      },
+      {
+        title: "Aplicación Sordo (Reconocimiento de Lenguaje de Señas)",
+        company: "Aplicación Móvil Android",
+        description: "Aplicación móvil Android para la captura, entrenamiento y reconocimiento en tiempo real de gestos en lenguaje de señas mediante la cámara del dispositivo.",
+        featuresTitle: "Características Clave",
+        features: [
+          "🔐 Autenticación de Usuarios: Registro e inicio de sesión con almacenamiento remoto en PostgreSQL y hash SHA-256.",
+          "📷 Captura en Tiempo Real: Visualización y procesamiento de video con Android CameraX (cámara frontal y trasera).",
+          "🤖 Modelo de Señas Local: Registro de muestras vectoriales de gestos y clasificación local basada en similitud de características.",
+          "💾 Gestión de Sesión: Persistencia de estado de usuario con SharedPreferences."
+        ],
+        techTitle: "Tecnologías Clave",
+        techDetails: "Java, Android CameraX, PostgreSQL (JDBC), SharedPreferences, Android Studio (Min SDK 26, Target SDK 36).",
+        githubUrl: "https://github.com/AlesisxHz-afk/AplicacionSordo",
+        codeButton: "Código"
       }
     ],
     certificates: [
@@ -142,6 +158,22 @@ export const translations = {
         techTitle: "Key Tech",
         techDetails: "Python (Flask), PostgreSQL, Scikit-Learn (ML), HTML5/CSS3, JavaScript (ES6).",
         githubUrl: "https://github.com/AlesisxHz-afk/TesisDistribucionProductos",
+        codeButton: "Code"
+      },
+      {
+        title: "Deaf App (Sign Language Recognition)",
+        company: "Android Mobile App",
+        description: "Android mobile application for real-time capture, training, and recognition of sign language gestures using the device camera.",
+        featuresTitle: "Key Features",
+        features: [
+          "🔐 User Authentication: Registration and login with remote PostgreSQL storage and SHA-256 hashing.",
+          "📷 Real-Time Capture: Video visualization and processing using Android CameraX (front and rear camera support).",
+          "🤖 Local Sign Model: Vector sample recording of gestures and local classification based on feature similarity.",
+          "💾 Session Management: User state persistence with SharedPreferences."
+        ],
+        techTitle: "Key Tech",
+        techDetails: "Java, Android CameraX, PostgreSQL (JDBC), SharedPreferences, Android Studio (Min SDK 26, Target SDK 36).",
+        githubUrl: "https://github.com/AlesisxHz-afk/AplicacionSordo",
         codeButton: "Code"
       }
     ],
