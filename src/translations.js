@@ -2,48 +2,52 @@ export const translations = {
   es: {
     nav: {
       home: "Inicio",
+      about: "Sobre mí",
       skills: "Habilidades",
       experience: "Experiencia",
-      projects: "Proyectos",
-      certificates: "Certificados"
+      projects: "Proyectos"
     },
     hero: {
-      role: "Desarrollador Full Stack",
+      greeting: "Hola, Soy Alejandro Purizaca",
+      role: "Ingeniero en sistemas y computacion",
       experience: "Tengo 6 meses de experiencia en desarrollo fullstack, construyendo aplicaciones web sencillas, robustas y de alto rendimiento.",
       cv: "Descargar CV"
     },
+    about: {
+      title: "Sobre mí",
+      description: "¡Hola! Soy Alejandro Purizaca, Bachiller en Ingeniería de Sistemas y Computación y desarrollador de software. Me especializo en el desarrollo Full Stack con Laravel, Vue.js, APIs REST y SQL. Me apasiona aprender, resolver problemas y crear soluciones web eficientes mientras sigo creciendo profesionalmente."
+    },
     sections: {
+      aboutSkills: "Perfil & Conocimientos",
+      about: "Sobre mí",
       skills: "Habilidades",
       experience: "Experiencia Laboral",
-      projects: "Proyectos",
-      certificates: "Certificaciones"
+      projects: "Proyectos Destacados"
     },
-    experience: [
-      {
-        role: "Full Stack Developer (Practicante Pre Profesional)",
-        company: "Dicta Colombia",
-        period: "Diciembre 2025 - Abril 2026",
-        bullets: [
-          "Desarrollé funcionalidades para una plataforma web utilizando NestJS, Angular y Prisma, participando en la construcción de módulos para la gestión de información.",
-          "Implementé reglas de negocio, validaciones e integración con la base de datos, garantizando la consistencia y confiabilidad de la información procesada."
-        ],
-        tech: ["NestJS", "Angular", "Prisma", "PostgreSQL", "TypeScript"]
-      },
-      {
-        role: "Full Stack Developer",
-        company: "Partner Tech",
-        period: "Marzo 2026 - Junio 2026",
-        bullets: [
-          "Implementé funcionalidades para aplicaciones web utilizando Spring Boot, Angular y PostgreSQL, asegurando el cumplimiento de los requerimientos funcionales y técnicos del proyecto.",
-          "Integré la comunicación entre el frontend, backend y la base de datos mediante APIs REST, optimizando el flujo de información y el rendimiento de la aplicación."
-        ],
-        tech: ["Spring Boot", "Angular", "PostgreSQL", "Java", "REST API"]
-      }
-    ],
+    skillsCategories: {
+      frameworks: "Frameworks & Librerías",
+      languages: "Lenguajes de Programación",
+      databases: "Bases de Datos"
+    },
+    experience: {
+      role: "Full Stack Developer",
+      company: "Partner Tech",
+      period: "Marzo 2026 - Julio 2026",
+      bullets: [
+        "Desarrollé módulos web con Laravel y Vue.js, implementando interfaces para el registro, consulta y actualización de información.",
+        "Implementé servicios REST en Laravel para gestionar operaciones CRUD y comunicación entre frontend y backend.",
+        "Gestioné consultas SQL en MySQL y PostgreSQL para obtener, filtrar y relacionar información requerida por los módulos del sistema.",
+        "Integré modelos, relaciones y validaciones en Laravel para asegurar la correcta aplicación de las reglas de negocio.",
+        "Resolví incidencias en funcionalidades frontend y backend, identificando errores en la lógica, consultas y procesamiento de datos."
+      ],
+      technologiesTitle: "Tecnologías utilizadas:"
+    },
     projects: [
       {
+        id: "proj-1",
         title: "Sistema de Distribución de Productos",
         company: "Agrícola Alaya S.A.C",
+        image: "/img/proyecto01.png",
         description: "Plataforma web inteligente basada en Machine Learning y Flask para optimizar la planificación de stock, la distribución a almacenes y la logística de rutas de transporte de productos hortofrutícolas.",
         featuresTitle: "Características Clave",
         features: [
@@ -58,8 +62,10 @@ export const translations = {
         codeButton: "Código"
       },
       {
+        id: "proj-2",
         title: "Aplicación Sordo (Reconocimiento de Lenguaje de Señas)",
         company: "Aplicación Móvil Android",
+        image: "/img/proyecto02.png",
         description: "Aplicación móvil Android para la captura, entrenamiento y reconocimiento en tiempo real de gestos en lenguaje de señas mediante la cámara del dispositivo.",
         featuresTitle: "Características Clave",
         features: [
@@ -72,26 +78,29 @@ export const translations = {
         techDetails: "Java, Android CameraX, PostgreSQL (JDBC), SharedPreferences, Android Studio (Min SDK 26, Target SDK 36).",
         githubUrl: "https://github.com/AlesisxHz-afk/AplicacionSordo",
         codeButton: "Código"
-      }
-    ],
-    certificates: [
-      {
-        title: "Gestión de Proyectos basado en el PMBOK® 7ma Edición",
-        issuer: "Colegio de Ingenieros del Perú & Netcram Consultores",
-        date: "Emisión: 09/02/2026",
-        hours: "120 horas académicas",
-        grade: "Promedio: 20/20",
-        fileUrl: "/certificados/366.pdf",
-        viewButton: "Ver Certificado"
       },
       {
-        title: "Gestión de Seguridad de Procesos basada en Riesgos (RBPS)",
-        issuer: "Colegio de Ingenieros del Perú & IED Stratton & CD Pasco",
-        date: "Emisión: 11/02/2026",
-        hours: "120 horas académicas",
-        grade: "Nota: 20/20",
-        fileUrl: "/certificados/47.pdf",
-        viewButton: "Ver Certificado"
+        id: "proj-3",
+        title: "Anime Quiz",
+        company: "Aplicación Móvil & Web",
+        image: "/img/proyecto03.png",
+        description: "Plataforma interactiva multiplataforma de trivias y preguntas sobre anime que combina una aplicación móvil nativa en Android Studio (Java) con una aplicación web en React, respaldadas por una API REST de alto rendimiento en FastAPI (Python).",
+        featuresTitle: "Características Clave",
+        features: [
+          "📱 App Móvil Nativa: Desarrollada en Android Studio con Java para una experiencia táctil fluida y optimizada.",
+          "🌐 Cliente Web Moderno: Frontend responsivo e interactivo implementado con React para jugar desde cualquier navegador.",
+          "⚡ Backend de Alto Rendimiento: API REST construida con FastAPI (Python) para la entrega dinámica de preguntas y cálculo de puntajes.",
+          "🎮 Trivia Interactiva: Modos de juego cronometrados, categorización por dificultades y retroalimentación en tiempo real."
+        ],
+        techTitle: "Tecnologías Clave",
+        techDetails: "Android Studio, Java, FastAPI (Python), React, JavaScript, REST APIs.",
+        githubUrl: "https://github.com/AlesisxHz-afk/AnimeQuizMovil",
+        githubLinks: [
+          { label: "Móvil", url: "https://github.com/AlesisxHz-afk/AnimeQuizMovil" },
+          { label: "Web", url: "https://github.com/AlesisxHz-afk/FrontendAnimeQuiz" },
+          { label: "Backend", url: "https://github.com/AlesisxHz-afk/BackendAnimeQuiz" }
+        ],
+        codeButton: "Código"
       }
     ],
     themes: {
@@ -105,48 +114,52 @@ export const translations = {
   en: {
     nav: {
       home: "Home",
+      about: "About Me",
       skills: "Skills",
       experience: "Experience",
-      projects: "Projects",
-      certificates: "Certificates"
+      projects: "Projects"
     },
     hero: {
-      role: "Full Stack Developer",
+      greeting: "Hello, I'm Alejandro Purizaca",
+      role: "Systems and Computer Engineer",
       experience: "I have 6 months of experience in fullstack development, building simple, robust, and high-performance web applications.",
       cv: "Download CV"
     },
+    about: {
+      title: "About Me",
+      description: "Hello! I'm Alejandro Purizaca, Bachelor in Systems and Computer Engineering and software developer. I specialize in Full Stack development with Laravel, Vue.js, REST APIs, and SQL. I am passionate about learning, solving problems, and building efficient web solutions while continuing to grow professionally."
+    },
     sections: {
+      aboutSkills: "Profile & Skills",
+      about: "About Me",
       skills: "Skills",
       experience: "Work Experience",
-      projects: "Projects",
-      certificates: "Certifications"
+      projects: "Featured Projects"
     },
-    experience: [
-      {
-        role: "Full Stack Developer (Pre-Professional Intern)",
-        company: "Dicta Colombia",
-        period: "December 2025 - April 2026",
-        bullets: [
-          "Developed functionalities for a web platform using NestJS, Angular, and Prisma, participating in building modules for information management.",
-          "Implemented business rules, validations, and database integrations, ensuring consistency and reliability of processed information."
-        ],
-        tech: ["NestJS", "Angular", "Prisma", "PostgreSQL", "TypeScript"]
-      },
-      {
-        role: "Full Stack Developer",
-        company: "Partner Tech",
-        period: "March 2026 - June 2026",
-        bullets: [
-          "Implemented features for web applications using Spring Boot, Angular, and PostgreSQL, ensuring compliance with functional and technical project requirements.",
-          "Integrated communication between frontend, backend, and database via REST APIs, optimizing information flow and application performance."
-        ],
-        tech: ["Spring Boot", "Angular", "PostgreSQL", "Java", "REST API"]
-      }
-    ],
+    skillsCategories: {
+      frameworks: "Frameworks & Libraries",
+      languages: "Programming Languages",
+      databases: "Databases"
+    },
+    experience: {
+      role: "Full Stack Developer",
+      company: "Partner Tech",
+      period: "March 2026 - July 2026",
+      bullets: [
+        "Developed web modules with Laravel and Vue.js, implementing interfaces for registering, querying, and updating information.",
+        "Implemented REST services in Laravel to manage CRUD operations and communication between frontend and backend.",
+        "Managed SQL queries in MySQL and PostgreSQL to retrieve, filter, and relate information required by system modules.",
+        "Integrated models, relationships, and validations in Laravel to ensure strict application of business rules.",
+        "Resolved issues in frontend and backend functionalities, identifying errors in logic, queries, and data processing."
+      ],
+      technologiesTitle: "Technologies used:"
+    },
     projects: [
       {
+        id: "proj-1",
         title: "Product Distribution System",
         company: "Agrícola Alaya S.A.C",
+        image: "/img/proyecto01.png",
         description: "Intelligent web platform based on Machine Learning and Flask to optimize stock planning, distribution to warehouses, and transport route logistics for fruit and vegetable products.",
         featuresTitle: "Key Features",
         features: [
@@ -161,8 +174,10 @@ export const translations = {
         codeButton: "Code"
       },
       {
+        id: "proj-2",
         title: "Deaf App (Sign Language Recognition)",
         company: "Android Mobile App",
+        image: "/img/proyecto02.png",
         description: "Android mobile application for real-time capture, training, and recognition of sign language gestures using the device camera.",
         featuresTitle: "Key Features",
         features: [
@@ -175,26 +190,29 @@ export const translations = {
         techDetails: "Java, Android CameraX, PostgreSQL (JDBC), SharedPreferences, Android Studio (Min SDK 26, Target SDK 36).",
         githubUrl: "https://github.com/AlesisxHz-afk/AplicacionSordo",
         codeButton: "Code"
-      }
-    ],
-    certificates: [
-      {
-        title: "Project Management based on PMBOK® 7th Edition",
-        issuer: "Colegio de Ingenieros del Perú & Netcram Consultores",
-        date: "Issued: 09/02/2026",
-        hours: "120 academic hours",
-        grade: "GPA: 20/20",
-        fileUrl: "/certificados/366.pdf",
-        viewButton: "View Certificate"
       },
       {
-        title: "Risk Based Process Safety (RBPS) Management",
-        issuer: "Colegio de Ingenieros del Perú & IED Stratton",
-        date: "Issued: 11/02/2026",
-        hours: "120 academic hours",
-        grade: "GPA: 20/20",
-        fileUrl: "/certificados/47.pdf",
-        viewButton: "View Certificate"
+        id: "proj-3",
+        title: "Anime Quiz",
+        company: "Mobile & Web Application",
+        image: "/img/proyecto03.png",
+        description: "Interactive cross-platform anime trivia application that pairs a native mobile experience developed in Android Studio (Java) with a web client in React, backed by a high-performance FastAPI (Python) REST backend.",
+        featuresTitle: "Key Features",
+        features: [
+          "📱 Native Mobile App: Developed in Android Studio with Java for smooth, optimized mobile touch interactions.",
+          "🌐 Modern Web Client: Interactive and responsive frontend built with React for playing quizzes directly from the browser.",
+          "⚡ High-Performance Backend: REST API built with FastAPI (Python) to dynamically manage trivia questions and score processing.",
+          "🎮 Trivia Gameplay: Timed rounds, difficulty levels, real-time question validation, and score tracking."
+        ],
+        techTitle: "Key Tech",
+        techDetails: "Android Studio, Java, FastAPI (Python), React, JavaScript, REST APIs.",
+        githubUrl: "https://github.com/AlesisxHz-afk/AnimeQuizMovil",
+        githubLinks: [
+          { label: "Mobile", url: "https://github.com/AlesisxHz-afk/AnimeQuizMovil" },
+          { label: "Web", url: "https://github.com/AlesisxHz-afk/FrontendAnimeQuiz" },
+          { label: "Backend", url: "https://github.com/AlesisxHz-afk/BackendAnimeQuiz" }
+        ],
+        codeButton: "Code"
       }
     ],
     themes: {
