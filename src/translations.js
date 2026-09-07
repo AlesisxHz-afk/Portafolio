@@ -15,7 +15,12 @@ export const translations = {
     },
     about: {
       title: "Sobre mí",
-      description: "¡Hola! Soy Alejandro Purizaca, Bachiller en Ingeniería de Sistemas y Computación y desarrollador de software. Me especializo en el desarrollo Full Stack con Laravel, Vue.js, APIs REST y SQL. Me apasiona aprender, resolver problemas y crear soluciones web eficientes mientras sigo creciendo profesionalmente."
+      description: "¡Hola! Soy Alejandro Purizaca, Bachiller en Ingeniería de Sistemas y Computación y Desarrollador de Software Full Stack. Cuento con experiencia desarrollando aplicaciones web con Spring Boot y Angular, gestionando servicios REST, bases de datos en PostgreSQL y aplicando buenas prácticas de desarrollo. Me apasiona aprender, resolver problemas y crear soluciones web eficientes, robustas y escalables mientras sigo creciendo profesionalmente.",
+      highlights: [
+        "Bachiller en Ing. de Sistemas y Computación",
+        "Especializado en Spring Boot, Angular, APIs REST & SQL",
+        "Enfoque en soluciones eficientes y alto rendimiento"
+      ]
     },
     sections: {
       aboutSkills: "Perfil & Conocimientos",
@@ -30,14 +35,14 @@ export const translations = {
       databases: "Bases de Datos"
     },
     experience: {
-      role: "Full Stack Developer",
+      role: "Desarrollador de Software Full Stack",
       company: "Partner Tech",
       period: "Marzo 2026 - Julio 2026",
       bullets: [
-        "Desarrollé módulos web con Laravel y Vue.js, implementando interfaces para el registro, consulta y actualización de información.",
-        "Implementé servicios REST en Laravel para gestionar operaciones CRUD y comunicación entre frontend y backend.",
-        "Gestioné consultas SQL en MySQL y PostgreSQL para obtener, filtrar y relacionar información requerida por los módulos del sistema.",
-        "Integré modelos, relaciones y validaciones en Laravel para asegurar la correcta aplicación de las reglas de negocio.",
+        "Desarrollé módulos web con Spring Boot y Angular, implementando interfaces para el registro, consulta y actualización de información.",
+        "Implementé servicios REST con Spring Boot para gestionar operaciones CRUD y la comunicación entre frontend y backend.",
+        "Gestioné consultas SQL en PostgreSQL para obtener, filtrar y relacionar información requerida por los módulos del sistema.",
+        "Integré entidades, relaciones y validaciones en Spring Boot para asegurar la correcta aplicación de las reglas de negocio.",
         "Resolví incidencias en funcionalidades frontend y backend, identificando errores en la lógica, consultas y procesamiento de datos."
       ],
       technologiesTitle: "Tecnologías utilizadas:"
@@ -46,7 +51,7 @@ export const translations = {
       {
         id: "proj-1",
         title: "Sistema de Distribución de Productos",
-        company: "Agrícola Alaya S.A.C",
+        company: "Aplicación Web",
         image: "/img/proyecto01.png",
         description: "Plataforma web inteligente basada en Machine Learning y Flask para optimizar la planificación de stock, la distribución a almacenes y la logística de rutas de transporte de productos hortofrutícolas.",
         featuresTitle: "Características Clave",
@@ -127,7 +132,12 @@ export const translations = {
     },
     about: {
       title: "About Me",
-      description: "Hello! I'm Alejandro Purizaca, Bachelor in Systems and Computer Engineering and software developer. I specialize in Full Stack development with Laravel, Vue.js, REST APIs, and SQL. I am passionate about learning, solving problems, and building efficient web solutions while continuing to grow professionally."
+      description: "Hello! I'm Alejandro Purizaca, Bachelor in Systems and Computer Engineering and Full Stack Software Developer. I have experience developing web applications with Spring Boot and Angular, managing REST services, PostgreSQL databases, and implementing best development practices. I am passionate about learning, solving problems, and building efficient, robust, and scalable web solutions while continuing to grow professionally.",
+      highlights: [
+        "Bachelor in Systems and Computer Engineering",
+        "Specialized in Spring Boot, Angular, REST APIs & SQL",
+        "Focus on efficient, high-performance solutions"
+      ]
     },
     sections: {
       aboutSkills: "Profile & Skills",
@@ -142,14 +152,14 @@ export const translations = {
       databases: "Databases"
     },
     experience: {
-      role: "Full Stack Developer",
+      role: "Full Stack Software Developer",
       company: "Partner Tech",
       period: "March 2026 - July 2026",
       bullets: [
-        "Developed web modules with Laravel and Vue.js, implementing interfaces for registering, querying, and updating information.",
-        "Implemented REST services in Laravel to manage CRUD operations and communication between frontend and backend.",
-        "Managed SQL queries in MySQL and PostgreSQL to retrieve, filter, and relate information required by system modules.",
-        "Integrated models, relationships, and validations in Laravel to ensure strict application of business rules.",
+        "Developed web modules with Spring Boot and Angular, implementing interfaces for registering, querying, and updating information.",
+        "Implemented REST services with Spring Boot to manage CRUD operations and communication between frontend and backend.",
+        "Managed SQL queries in PostgreSQL to retrieve, filter, and relate information required by system modules.",
+        "Integrated entities, relationships, and validations in Spring Boot to ensure strict application of business rules.",
         "Resolved issues in frontend and backend functionalities, identifying errors in logic, queries, and data processing."
       ],
       technologiesTitle: "Technologies used:"
@@ -158,7 +168,7 @@ export const translations = {
       {
         id: "proj-1",
         title: "Product Distribution System",
-        company: "Agrícola Alaya S.A.C",
+        company: "Application Web",
         image: "/img/proyecto01.png",
         description: "Intelligent web platform based on Machine Learning and Flask to optimize stock planning, distribution to warehouses, and transport route logistics for fruit and vegetable products.",
         featuresTitle: "Key Features",

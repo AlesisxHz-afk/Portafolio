@@ -675,6 +675,9 @@ body {
   font-size: 1.05rem;
   color: var(--text-secondary);
   line-height: 1.75;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
 }
 
 .about-highlights {
@@ -689,16 +692,20 @@ body {
 
 .highlight-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.8rem;
   font-size: 0.95rem;
   color: var(--text-primary);
   font-weight: 500;
+  line-height: 1.5;
 }
 
 .highlight-dot {
   color: var(--accent);
   font-size: 1rem;
+  flex-shrink: 0;
+  line-height: 1.5;
+  margin-top: 0.05rem;
 }
 
 /* Skills internals (Sin tooltip emergente abajo) */

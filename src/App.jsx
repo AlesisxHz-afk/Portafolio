@@ -144,10 +144,9 @@ function App() {
 
   // Tech badges with icons for Partner Tech experience
   const partnerTechSkills = [
-    { name: 'Laravel', icon: <FaLaravel /> },
-    { name: 'Vue.js', icon: <FaVuejs /> },
+    { name: 'Spring Boot', icon: <SiSpringboot /> },
+    { name: 'Angular', icon: <FaAngular /> },
     { name: 'REST APIs', icon: <TbApi /> },
-    { name: 'MySQL', icon: <SiMysql /> },
     { name: 'PostgreSQL', icon: <SiPostgresql /> },
     { name: 'SQL', icon: <DiDatabase /> }
   ];
@@ -340,18 +339,16 @@ function App() {
                 <div className="about-body">
                   <p className="about-text">{t.about.description}</p>
                   <div className="about-highlights">
-                    <div className="highlight-item">
-                      <span className="highlight-dot">✦</span>
-                      <span>Bachiller en Ing. de Sistemas y Computación</span>
-                    </div>
-                    <div className="highlight-item">
-                      <span className="highlight-dot">✦</span>
-                      <span>Especializado en Laravel, Vue.js, APIs REST & SQL</span>
-                    </div>
-                    <div className="highlight-item">
-                      <span className="highlight-dot">✦</span>
-                      <span>Enfoque en soluciones eficientes y alto rendimiento</span>
-                    </div>
+                    {(t.about.highlights || [
+                      "Bachiller en Ing. de Sistemas y Computación",
+                      "Especializado en Spring Boot, Angular, APIs REST & SQL",
+                      "Enfoque en soluciones eficientes y alto rendimiento"
+                    ]).map((highlight, idx) => (
+                      <div key={idx} className="highlight-item">
+                        <span className="highlight-dot">✦</span>
+                        <span>{highlight}</span>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
