@@ -11,7 +11,8 @@ import {
 import { 
   SiTypescript, SiJavascript, SiPython, SiPhp, 
   SiSpringboot, SiNestjs, SiFastapi, SiFlask,
-  SiPostgresql, SiMysql, SiScikitlearn, SiAndroidstudio
+  SiPostgresql, SiMysql, SiScikitlearn, SiAndroidstudio,
+  SiMongodb
 } from 'react-icons/si';
 import { DiDatabase } from 'react-icons/di';
 import { TbApi } from 'react-icons/tb';
@@ -88,6 +89,7 @@ function App() {
   const [language, setLanguage] = useState('es');
   const [theme, setTheme] = useState('cyberpunk');
   const [projIndex, setProjIndex] = useState(0);
+  const [expIndex, setExpIndex] = useState(0);
 
   const t = translations[language];
 
@@ -98,6 +100,16 @@ function App() {
 
   const handleNextProject = () => {
     setProjIndex((prev) => (prev === t.projects.length - 1 ? 0 : prev + 1));
+  };
+
+  // Carousel handlers for experience
+  const expList = t.experiences || [t.experience];
+  const handlePrevExp = () => {
+    setExpIndex((prev) => (prev === 0 ? expList.length - 1 : prev - 1));
+  };
+
+  const handleNextExp = () => {
+    setExpIndex((prev) => (prev === expList.length - 1 ? 0 : prev + 1));
   };
 
   // Set theme on html tag
@@ -137,9 +149,19 @@ function App() {
       skills: [
         { name: 'SQL Server', icon: <DiDatabase /> },
         { name: 'PostgreSQL', icon: <SiPostgresql /> },
+        { name: 'MongoDB', icon: <SiMongodb /> },
         { name: 'MySQL', icon: <SiMysql /> },
       ]
     }
+  ];
+
+  // Tech badges with icons for Dicta Colombia experience
+  const dictaTechSkills = [
+    { name: 'Angular', icon: <FaAngular /> },
+    { name: 'NestJS', icon: <SiNestjs /> },
+    { name: 'REST APIs', icon: <TbApi /> },
+    { name: 'MongoDB', icon: <SiMongodb /> },
+    { name: 'TypeScript', icon: <SiTypescript /> }
   ];
 
   // Tech badges with icons for Partner Tech experience
@@ -150,6 +172,8 @@ function App() {
     { name: 'PostgreSQL', icon: <SiPostgresql /> },
     { name: 'SQL', icon: <DiDatabase /> }
   ];
+
+  const allExpTechs = [dictaTechSkills, partnerTechSkills];
 
   // Tech badges with icons for Project 1
   const project1Techs = [
@@ -195,7 +219,7 @@ function App() {
       <nav className="navbar">
         {/* Left Side: Language Toggle with Flag on Left */}
         <div className="nav-left">
-          <button
+          <button 
             className="lang-quick-toggle"
             onClick={() => setLanguage(language === 'es' ? 'en' : 'es')}
             title={language === 'es' ? 'Cambiar a English' : 'Cambiar a Español'}
@@ -381,37 +405,78 @@ function App() {
           </div>
         </section>
 
-        {/* Experience Section (Partner Tech only) */}
+        {/* Experience Section as a Carousel */}
         <section id="experience" className="experience-section">
           <h2 className="section-title">{t.sections.experience}</h2>
-          <div className="experience-card">
-            <div className="exp-card-header">
-              <div className="exp-main-title">
-                <h3>{t.experience.role}</h3>
-                <h4>{t.experience.company}</h4>
-              </div>
-              <span className="exp-period-badge">{t.experience.period}</span>
+          
+          <div className="experience-carousel-wrapper">
+            <button 
+              className="carousel-nav-btn prev exp-nav-btn" 
+              onClick={handlePrevExp}
+              aria-label="Previous experience"
+            >
+              <FaChevronLeft />
+            </button>
+
+            <div className="experience-carousel-slide-box">
+              {expList.map((exp, idx) => {
+                if (idx !== expIndex) return null;
+                const techs = allExpTechs[idx] || partnerTechSkills;
+
+                return (
+                  <div key={exp.id || idx} className="experience-card carousel-slide">
+                    <div className="exp-card-header">
+                      <div className="exp-main-title">
+                        <div className="exp-badge-row">
+                          <span className="exp-counter-tag">{idx + 1} / {expList.length}</span>
+                        </div>
+                        <h3>{exp.role}</h3>
+                        <h4>{exp.company}</h4>
+                      </div>
+                      <span className="exp-period-badge">{exp.period}</span>
+                    </div>
+
+                    <ul className="exp-points-list">
+                      {exp.bullets.map((bullet, bIdx) => (
+                        <li key={bIdx} className="exp-point-item">
+                          <span className="point-bullet-icon">✦</span>
+                          <span className="point-text">{bullet}</span>
+                        </li>
+                      ))}
+                    </ul>
+
+                    <div className="exp-tech-container">
+                      <span className="exp-tech-label">{exp.technologiesTitle || (language === 'es' ? 'Tecnologías utilizadas:' : 'Technologies used:')}</span>
+                      <div className="exp-tech-chips">
+                        {techs.map((tech) => (
+                          <div key={tech.name} className="tech-badge-with-icon">
+                            <span className="tech-badge-icon">{tech.icon}</span>
+                            <span className="tech-badge-name">{tech.name}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
 
-            <ul className="exp-points-list">
-              {t.experience.bullets.map((bullet, idx) => (
-                <li key={idx} className="exp-point-item">
-                  <span className="point-bullet-icon">✦</span>
-                  <span className="point-text">{bullet}</span>
-                </li>
-              ))}
-            </ul>
+            <button 
+              className="carousel-nav-btn next exp-nav-btn" 
+              onClick={handleNextExp}
+              aria-label="Next experience"
+            >
+              <FaChevronRight />
+            </button>
 
-            <div className="exp-tech-container">
-              <span className="exp-tech-label">{t.experience.technologiesTitle}</span>
-              <div className="exp-tech-chips">
-                {partnerTechSkills.map((tech) => (
-                  <div key={tech.name} className="tech-badge-with-icon">
-                    <span className="tech-badge-icon">{tech.icon}</span>
-                    <span className="tech-badge-name">{tech.name}</span>
-                  </div>
-                ))}
-              </div>
+            <div className="carousel-indicators">
+              {expList.map((_, idx) => (
+                <div 
+                  key={idx} 
+                  className={`carousel-dot ${idx === expIndex ? 'active' : ''}`}
+                  onClick={() => setExpIndex(idx)}
+                />
+              ))}
             </div>
           </div>
         </section>

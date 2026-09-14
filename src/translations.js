@@ -10,16 +10,16 @@ export const translations = {
     hero: {
       greeting: "Hola, Soy Alejandro Purizaca",
       role: "Ingeniero en sistemas y computacion",
-      experience: "Tengo 6 meses de experiencia en desarrollo fullstack, construyendo aplicaciones web sencillas, robustas y de alto rendimiento.",
+      experience: "Tengo 1 año de experiencia en desarrollo fullstack, construyendo aplicaciones web sencillas, robustas y de alto rendimiento.",
       cv: "Descargar CV"
     },
     about: {
       title: "Sobre mí",
-      description: "¡Hola! Soy Alejandro Purizaca, Bachiller en Ingeniería de Sistemas y Computación y Desarrollador de Software Full Stack. Cuento con experiencia desarrollando aplicaciones web con Spring Boot y Angular, gestionando servicios REST, bases de datos en PostgreSQL y aplicando buenas prácticas de desarrollo. Me apasiona aprender, resolver problemas y crear soluciones web eficientes, robustas y escalables mientras sigo creciendo profesionalmente.",
+      description: "¡Hola! Soy Alejandro Purizaca, Bachiller en Ingeniería de Sistemas y Computación con experiencia en desarrollo Full Stack. Manejo de Angular, NestJS, Spring Boot, PostgreSQL y MongoDB para el desarrollo de aplicaciones web, APIs REST y gestión de datos. Enfocado en resolver problemas y desarrollar soluciones eficientes.",
       highlights: [
         "Bachiller en Ing. de Sistemas y Computación",
-        "Especializado en Spring Boot, Angular, APIs REST & SQL",
-        "Enfoque en soluciones eficientes y alto rendimiento"
+        "Especializado en Angular, NestJS, Spring Boot, PostgreSQL & MongoDB",
+        "Enfoque en resolver problemas y soluciones eficientes"
       ]
     },
     sections: {
@@ -36,17 +36,41 @@ export const translations = {
     },
     experience: {
       role: "Desarrollador de Software Full Stack",
-      company: "Partner Tech",
-      period: "Marzo 2026 - Julio 2026",
+      company: "Dicta Colombia",
+      period: "Septiembre 2025 - Febrero 2026",
       bullets: [
-        "Desarrollé módulos web con Spring Boot y Angular, implementando interfaces para el registro, consulta y actualización de información.",
-        "Implementé servicios REST con Spring Boot para gestionar operaciones CRUD y la comunicación entre frontend y backend.",
-        "Gestioné consultas SQL en PostgreSQL para obtener, filtrar y relacionar información requerida por los módulos del sistema.",
-        "Integré entidades, relaciones y validaciones en Spring Boot para asegurar la correcta aplicación de las reglas de negocio.",
-        "Resolví incidencias en funcionalidades frontend y backend, identificando errores en la lógica, consultas y procesamiento de datos."
+        "Desarrollé módulos web utilizando Angular y NestJS, implementando funcionalidades para el registro, consulta y actualización de información según los requerimientos del sistema.",
+        "Implementé APIs REST para conectar el frontend con el backend, incorporando validaciones y lógica necesaria para el correcto funcionamiento de las funcionalidades desarrolladas.",
+        "Trabajé con MongoDB para la consulta y gestión de información, realizando operaciones sobre los datos requeridos por los diferentes módulos de la aplicación."
       ],
       technologiesTitle: "Tecnologías utilizadas:"
     },
+    experiences: [
+      {
+        id: "exp-1",
+        role: "Desarrollador de Software Full Stack",
+        company: "Dicta Colombia",
+        period: "Septiembre 2025 - Febrero 2026",
+        bullets: [
+          "Desarrollé módulos web utilizando Angular y NestJS, implementando funcionalidades para el registro, consulta y actualización de información según los requerimientos del sistema.",
+          "Implementé APIs REST para conectar el frontend con el backend, incorporando validaciones y lógica necesaria para el correcto funcionamiento de las funcionalidades desarrolladas.",
+          "Trabajé con MongoDB para la consulta y gestión de información, realizando operaciones sobre los datos requeridos por los diferentes módulos de la aplicación."
+        ],
+        technologiesTitle: "Tecnologías utilizadas:"
+      },
+      {
+        id: "exp-2",
+        role: "Desarrollador de Software Full Stack",
+        company: "Partner Tech",
+        period: "Marzo 2026 - Agosto 2026",
+        bullets: [
+          "Desarrollé funcionalidades para módulos web utilizando Angular y Spring Boot, trabajando en la implementación y mejora de componentes de acuerdo con los requerimientos del sistema.",
+          "Implementé servicios backend con Spring Boot, utilizando entidades, relaciones y validaciones para procesar la información y aplicar las reglas de negocio correspondientes.",
+          "Realicé consultas y operaciones sobre PostgreSQL mediante SQL, obteniendo y relacionando información necesaria para el funcionamiento de los diferentes módulos de la aplicación."
+        ],
+        technologiesTitle: "Tecnologías utilizadas:"
+      }
+    ],
     projects: [
       {
         id: "proj-1",
@@ -127,16 +151,16 @@ export const translations = {
     hero: {
       greeting: "Hello, I'm Alejandro Purizaca",
       role: "Systems and Computer Engineer",
-      experience: "I have 6 months of experience in fullstack development, building simple, robust, and high-performance web applications.",
+      experience: "I have 1 year of experience in fullstack development, building simple, robust, and high-performance web applications.",
       cv: "Download CV"
     },
     about: {
       title: "About Me",
-      description: "Hello! I'm Alejandro Purizaca, Bachelor in Systems and Computer Engineering and Full Stack Software Developer. I have experience developing web applications with Spring Boot and Angular, managing REST services, PostgreSQL databases, and implementing best development practices. I am passionate about learning, solving problems, and building efficient, robust, and scalable web solutions while continuing to grow professionally.",
+      description: "Hello! I'm Alejandro Purizaca, Bachelor in Systems and Computer Engineering with experience in Full Stack development. Proficient in Angular, NestJS, Spring Boot, PostgreSQL, and MongoDB for developing web applications, REST APIs, and data management. Focused on problem-solving and delivering efficient solutions.",
       highlights: [
         "Bachelor in Systems and Computer Engineering",
-        "Specialized in Spring Boot, Angular, REST APIs & SQL",
-        "Focus on efficient, high-performance solutions"
+        "Specialized in Angular, NestJS, Spring Boot, PostgreSQL & MongoDB",
+        "Focus on problem solving and efficient solutions"
       ]
     },
     sections: {
@@ -153,17 +177,41 @@ export const translations = {
     },
     experience: {
       role: "Full Stack Software Developer",
-      company: "Partner Tech",
-      period: "March 2026 - July 2026",
+      company: "Dicta Colombia",
+      period: "September 2025 - February 2026",
       bullets: [
-        "Developed web modules with Spring Boot and Angular, implementing interfaces for registering, querying, and updating information.",
-        "Implemented REST services with Spring Boot to manage CRUD operations and communication between frontend and backend.",
-        "Managed SQL queries in PostgreSQL to retrieve, filter, and relate information required by system modules.",
-        "Integrated entities, relationships, and validations in Spring Boot to ensure strict application of business rules.",
-        "Resolved issues in frontend and backend functionalities, identifying errors in logic, queries, and data processing."
+        "Developed web modules using Angular and NestJS, implementing features for registering, querying, and updating information according to system requirements.",
+        "Implemented REST APIs to connect the frontend with the backend, incorporating validations and necessary logic for the proper operation of developed features.",
+        "Worked with MongoDB for querying and managing information, executing operations on data required by the application modules."
       ],
       technologiesTitle: "Technologies used:"
     },
+    experiences: [
+      {
+        id: "exp-1",
+        role: "Full Stack Software Developer",
+        company: "Dicta Colombia",
+        period: "September 2025 - February 2026",
+        bullets: [
+          "Developed web modules using Angular and NestJS, implementing features for registering, querying, and updating information according to system requirements.",
+          "Implemented REST APIs to connect the frontend with the backend, incorporating validations and necessary logic for the proper operation of developed features.",
+          "Worked with MongoDB for querying and managing information, executing operations on data required by the application modules."
+        ],
+        technologiesTitle: "Technologies used:"
+      },
+      {
+        id: "exp-2",
+        role: "Full Stack Software Developer",
+        company: "Partner Tech",
+        period: "March 2026 - August 2026",
+        bullets: [
+          "Developed features for web modules using Angular and Spring Boot, working on component implementation and enhancement according to system requirements.",
+          "Implemented backend services with Spring Boot, using entities, relationships, and validations to process information and enforce business rules.",
+          "Executed queries and operations on PostgreSQL via SQL, retrieving and relating data required for the operation of application modules."
+        ],
+        technologiesTitle: "Technologies used:"
+      }
+    ],
     projects: [
       {
         id: "proj-1",
