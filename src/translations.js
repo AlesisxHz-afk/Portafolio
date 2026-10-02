@@ -35,38 +35,38 @@ export const translations = {
       databases: "Bases de Datos"
     },
     experience: {
-      role: "Desarrollador de Software Full Stack",
-      company: "Dicta Colombia",
-      period: "Septiembre 2025 - Febrero 2026",
+      role: "Desarrollador Full Stack",
+      company: "Partner Tech",
+      period: "Marzo 2026 – Septiembre 2026",
       bullets: [
-        "Desarrollé módulos web utilizando Angular y NestJS, implementando funcionalidades para el registro, consulta y actualización de información según los requerimientos del sistema.",
-        "Implementé APIs REST para conectar el frontend con el backend, incorporando validaciones y lógica necesaria para el correcto funcionamiento de las funcionalidades desarrolladas.",
-        "Trabajé con MongoDB para la consulta y gestión de información, realizando operaciones sobre los datos requeridos por los diferentes módulos de la aplicación."
+        "Desarrollé funcionalidades para módulos web utilizando Angular y Spring Boot, trabajando en la implementación y mejora de componentes de acuerdo con los requerimientos del sistema.",
+        "Implementé servicios backend con Spring Boot, utilizando entidades, relaciones y validaciones para procesar la información y aplicar las reglas de negocio correspondientes.",
+        "Realicé consultas y operaciones sobre PostgreSQL mediante SQL, obteniendo y relacionando información necesaria para el funcionamiento de los diferentes módulos de la aplicación."
       ],
       technologiesTitle: "Tecnologías utilizadas:"
     },
     experiences: [
       {
         id: "exp-1",
-        role: "Desarrollador de Software Full Stack",
-        company: "Dicta Colombia",
-        period: "Septiembre 2025 - Febrero 2026",
+        role: "Desarrollador Full Stack",
+        company: "Partner Tech",
+        period: "Marzo 2026 – Septiembre 2026",
         bullets: [
-          "Desarrollé módulos web utilizando Angular y NestJS, implementando funcionalidades para el registro, consulta y actualización de información según los requerimientos del sistema.",
-          "Implementé APIs REST para conectar el frontend con el backend, incorporando validaciones y lógica necesaria para el correcto funcionamiento de las funcionalidades desarrolladas.",
-          "Trabajé con MongoDB para la consulta y gestión de información, realizando operaciones sobre los datos requeridos por los diferentes módulos de la aplicación."
+          "Desarrollé funcionalidades para módulos web utilizando Angular y Spring Boot, trabajando en la implementación y mejora de componentes de acuerdo con los requerimientos del sistema.",
+          "Implementé servicios backend con Spring Boot, utilizando entidades, relaciones y validaciones para procesar la información y aplicar las reglas de negocio correspondientes.",
+          "Realicé consultas y operaciones sobre PostgreSQL mediante SQL, obteniendo y relacionando información necesaria para el funcionamiento de los diferentes módulos de la aplicación."
         ],
         technologiesTitle: "Tecnologías utilizadas:"
       },
       {
         id: "exp-2",
-        role: "Desarrollador de Software Full Stack",
-        company: "Partner Tech",
-        period: "Marzo 2026 - Agosto 2026",
+        role: "Desarrollador Full Stack",
+        company: "Dicta Colombia",
+        period: "Octubre 2025 – Febrero 2026",
         bullets: [
-          "Desarrollé funcionalidades para módulos web utilizando Angular y Spring Boot, trabajando en la implementación y mejora de componentes de acuerdo con los requerimientos del sistema.",
-          "Implementé servicios backend con Spring Boot, utilizando entidades, relaciones y validaciones para procesar la información y aplicar las reglas de negocio correspondientes.",
-          "Realicé consultas y operaciones sobre PostgreSQL mediante SQL, obteniendo y relacionando información necesaria para el funcionamiento de los diferentes módulos de la aplicación."
+          "Desarrollé módulos web utilizando Angular y NestJS, implementando funcionalidades para el registro, consulta y actualización de información según los requerimientos del sistema.",
+          "Implementé APIs REST para conectar el frontend con el backend, incorporando validaciones y lógica necesaria para el correcto funcionamiento de las funcionalidades desarrolladas.",
+          "Trabajé con MongoDB para la consulta y gestión de información, realizando operaciones sobre los datos requeridos por los diferentes módulos de la aplicación."
         ],
         technologiesTitle: "Tecnologías utilizadas:"
       }
@@ -176,38 +176,38 @@ export const translations = {
       databases: "Databases"
     },
     experience: {
-      role: "Full Stack Software Developer",
-      company: "Dicta Colombia",
-      period: "September 2025 - February 2026",
+      role: "Full Stack Developer",
+      company: "Partner Tech",
+      period: "March 2026 – September 2026",
       bullets: [
-        "Developed web modules using Angular and NestJS, implementing features for registering, querying, and updating information according to system requirements.",
-        "Implemented REST APIs to connect the frontend with the backend, incorporating validations and necessary logic for the proper operation of developed features.",
-        "Worked with MongoDB for querying and managing information, executing operations on data required by the application modules."
+        "Developed features for web modules using Angular and Spring Boot, working on component implementation and enhancement according to system requirements.",
+        "Implemented backend services with Spring Boot, using entities, relationships, and validations to process information and enforce business rules.",
+        "Executed queries and operations on PostgreSQL via SQL, retrieving and relating data required for the operation of application modules."
       ],
       technologiesTitle: "Technologies used:"
     },
     experiences: [
       {
         id: "exp-1",
-        role: "Full Stack Software Developer",
-        company: "Dicta Colombia",
-        period: "September 2025 - February 2026",
+        role: "Full Stack Developer",
+        company: "Partner Tech",
+        period: "March 2026 – September 2026",
         bullets: [
-          "Developed web modules using Angular and NestJS, implementing features for registering, querying, and updating information according to system requirements.",
-          "Implemented REST APIs to connect the frontend with the backend, incorporating validations and necessary logic for the proper operation of developed features.",
-          "Worked with MongoDB for querying and managing information, executing operations on data required by the application modules."
+          "Developed features for web modules using Angular and Spring Boot, working on component implementation and enhancement according to system requirements.",
+          "Implemented backend services with Spring Boot, using entities, relationships, and validations to process information and enforce business rules.",
+          "Executed queries and operations on PostgreSQL via SQL, retrieving and relating data required for the operation of application modules."
         ],
         technologiesTitle: "Technologies used:"
       },
       {
         id: "exp-2",
-        role: "Full Stack Software Developer",
-        company: "Partner Tech",
-        period: "March 2026 - August 2026",
+        role: "Full Stack Developer",
+        company: "Dicta Colombia",
+        period: "October 2025 – February 2026",
         bullets: [
-          "Developed features for web modules using Angular and Spring Boot, working on component implementation and enhancement according to system requirements.",
-          "Implemented backend services with Spring Boot, using entities, relationships, and validations to process information and enforce business rules.",
-          "Executed queries and operations on PostgreSQL via SQL, retrieving and relating data required for the operation of application modules."
+          "Developed web modules using Angular and NestJS, implementing features for registering, querying, and updating information according to system requirements.",
+          "Implemented REST APIs to connect the frontend with the backend, incorporating validations and necessary logic for the proper operation of developed features.",
+          "Worked with MongoDB for querying and managing information, executing operations on data required by the application modules."
         ],
         technologiesTitle: "Technologies used:"
       }

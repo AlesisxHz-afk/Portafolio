@@ -155,15 +155,6 @@ function App() {
     }
   ];
 
-  // Tech badges with icons for Dicta Colombia experience
-  const dictaTechSkills = [
-    { name: 'Angular', icon: <FaAngular /> },
-    { name: 'NestJS', icon: <SiNestjs /> },
-    { name: 'REST APIs', icon: <TbApi /> },
-    { name: 'MongoDB', icon: <SiMongodb /> },
-    { name: 'TypeScript', icon: <SiTypescript /> }
-  ];
-
   // Tech badges with icons for Partner Tech experience
   const partnerTechSkills = [
     { name: 'Spring Boot', icon: <SiSpringboot /> },
@@ -173,7 +164,20 @@ function App() {
     { name: 'SQL', icon: <DiDatabase /> }
   ];
 
-  const allExpTechs = [dictaTechSkills, partnerTechSkills];
+  // Tech badges with icons for Dicta Colombia experience
+  const dictaTechSkills = [
+    { name: 'Angular', icon: <FaAngular /> },
+    { name: 'NestJS', icon: <SiNestjs /> },
+    { name: 'REST APIs', icon: <TbApi /> },
+    { name: 'MongoDB', icon: <SiMongodb /> },
+    { name: 'TypeScript', icon: <SiTypescript /> }
+  ];
+
+  const getExpTechs = (exp, idx) => {
+    if (exp?.company === 'Partner Tech') return partnerTechSkills;
+    if (exp?.company === 'Dicta Colombia') return dictaTechSkills;
+    return (idx === 0 ? partnerTechSkills : dictaTechSkills);
+  };
 
   // Tech badges with icons for Project 1
   const project1Techs = [
@@ -421,7 +425,7 @@ function App() {
             <div className="experience-carousel-slide-box">
               {expList.map((exp, idx) => {
                 if (idx !== expIndex) return null;
-                const techs = allExpTechs[idx] || partnerTechSkills;
+                const techs = getExpTechs(exp, idx);
 
                 return (
                   <div key={exp.id || idx} className="experience-card carousel-slide">
