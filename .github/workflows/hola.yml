@@ -8,9 +8,13 @@ on:
 jobs:
   hello_world:
     runs-on: ubuntu-latest
+
     steps:
       - name: Echo the message
         run: echo "Hello, World!"
+
       - name: Dime la fecha
         run: date
-      - run: ls l
+
+      - name: Listar archivos
+        run: ls -l
